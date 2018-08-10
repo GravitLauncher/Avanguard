@@ -1,0 +1,779 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="AvanguardDefence">
+      <UniqueIdentifier>{6adc7958-fde9-40a3-956f-4cf74665b37b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\AntiMacros">
+      <UniqueIdentifier>{749d4c7b-7c24-4a1b-82d3-b00514895611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\AntiDebugging">
+      <UniqueIdentifier>{3cd43e2b-f6c8-4f49-9cf5-0e32fabc5f48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\Encryption">
+      <UniqueIdentifier>{af465c5f-32d5-4b29-8a30-d94a07f0fdf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\HandlesKeeper">
+      <UniqueIdentifier>{082e7e22-3303-43f6-aa22-93195a6618fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\KernelUtils">
+      <UniqueIdentifier>{4b0c476c-4d47-4fa3-9638-5fc6124552a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\KeSecuredMemory">
+      <UniqueIdentifier>{1706bbef-c551-4b8d-9dfd-1dd366767045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\ModulesFilter">
+      <UniqueIdentifier>{eadb8fcf-485b-4223-8d3e-139a065945c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\ThreadsFilter">
+      <UniqueIdentifier>{fc5ed613-e5a2-42c0-b0b2-af7038d5da99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\ProcessAPI">
+      <UniqueIdentifier>{da23b007-6bee-46c2-8b3b-7e6dc716e2e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\TLS">
+      <UniqueIdentifier>{3a4d5f17-db52-4ba6-8fcc-4f126ce9e52b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\PEAnalyzer">
+      <UniqueIdentifier>{74616d1f-adc8-4f4f-94da-277559068de1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HoShiMin%27s API">
+      <UniqueIdentifier>{ad1b6dfb-5345-4c67-972a-e2203ce9b5f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\PebTeb">
+      <UniqueIdentifier>{c28374da-3662-42a2-b95a-0c3e6f36182f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="t1ha">
+      <UniqueIdentifier>{8be81dfc-0562-464d-8582-f6946227d111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\ApiSet">
+      <UniqueIdentifier>{177c2950-d9fc-4c2c-b226-470131f9cd91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\MemoryFilter">
+      <UniqueIdentifier>{4a74a33e-47b4-4ee6-8b5a-32efc6c93ec9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zydis">
+      <UniqueIdentifier>{4e741c4f-6fbf-4601-888f-0cf68b8ab578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zydis\Zydis">
+      <UniqueIdentifier>{30e5d7b0-865e-48e2-af7b-fb76cc5dd70c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\CheckHook">
+      <UniqueIdentifier>{a2a47bfb-7617-4e34-ba66-1217541d4525}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\AppInitDlls">
+      <UniqueIdentifier>{9c21c2b9-f20a-4af2-9713-a1550fcaa9dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\MitigationsPolicy">
+      <UniqueIdentifier>{db2afae7-25e2-4731-9c51-517b3c67c199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\WinTrust">
+      <UniqueIdentifier>{226420cf-a960-4892-adda-3b40a3aafca0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\KiUserApcDispatcher">
+      <UniqueIdentifier>{32ff76a0-9a07-427e-8fdb-cf75d32c84b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MinHook">
+      <UniqueIdentifier>{f26cf68d-3769-48ac-bdc2-8acddf3084f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\hModules">
+      <UniqueIdentifier>{a1960df9-d7b9-40d3-87f1-fb776b8b2c2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\WinHooks">
+      <UniqueIdentifier>{016ca3b7-63ff-4a6c-8c3e-9a9a6aeaba75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\AvnApi">
+      <UniqueIdentifier>{d9840127-c9a9-460e-a533-3383ac1f4817}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\DACL">
+      <UniqueIdentifier>{32543f7d-5657-416d-a860-c8b41bde96ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\HWIDs">
+      <UniqueIdentifier>{5bc7e5f2-2713-4825-b2cf-2a0d62acbc45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\ContextFilter">
+      <UniqueIdentifier>{10fd8230-76bd-44cf-b844-9ba86253c200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\ModulesUtils">
+      <UniqueIdentifier>{bb626324-6a72-4934-b81f-bdff93b29666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\JavaSupport">
+      <UniqueIdentifier>{d8350677-f267-4851-8aca-b08fccb610a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\JavaSupport\JavaBindings">
+      <UniqueIdentifier>{ead8c17d-fc94-41a6-8dd2-684bf5083a1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\JavaSupport\JNI">
+      <UniqueIdentifier>{dba1cf9e-2cb5-4946-99e1-a97224fd7322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\JavaSupport\JNI\include">
+      <UniqueIdentifier>{a33e2f6f-d88d-4fe2-b6de-afdb7df1be53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\JavaSupport\JNI\include\win32">
+      <UniqueIdentifier>{1174c18f-1e9d-420d-928e-0e55b8e673a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\JavaSupport\JNI\lib">
+      <UniqueIdentifier>{175266db-1a9b-47c8-88e4-50f1c67dea24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\ThreatEliminating">
+      <UniqueIdentifier>{daef30ed-f65b-46c7-9132-f85a8f4150b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\Locks">
+      <UniqueIdentifier>{424cf323-88fe-4496-86e6-34e346fc5d88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xorstr">
+      <UniqueIdentifier>{b367007d-0b07-41ec-ac61-0d5bf602450d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\Remapping">
+      <UniqueIdentifier>{41b12e1b-6447-4043-ab06-78229bb6773f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsmJit">
+      <UniqueIdentifier>{a2ec44ba-8a35-460f-862b-3bb0f4c149ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsmJit\asmjit">
+      <UniqueIdentifier>{445ef729-a3c1-4793-856e-f477c403b890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsmJit\asmtk">
+      <UniqueIdentifier>{b156cf73-b734-457f-8c56-ddefb512bb2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsmJit\asmjit\core">
+      <UniqueIdentifier>{e4bdabf4-85f7-4a67-966e-8a88972aa573}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsmJit\asmjit\x86">
+      <UniqueIdentifier>{bf32da44-aa62-4cec-b867-c488775ccb7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsmJit\lib">
+      <UniqueIdentifier>{0562acd5-a43d-4783-9ae4-0c567fd33618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsmJit\lib\x86">
+      <UniqueIdentifier>{8aa3e682-23f5-43b9-a746-1587443396b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsmJit\lib\x64">
+      <UniqueIdentifier>{4a56dffc-0b39-4395-8e57-6f46ecf435b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AvanguardDefence\Sfc">
+      <UniqueIdentifier>{0bd6839a-4fb3-454e-a0ac-35eb293370d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\AntiDebugging.h">
+      <Filter>AvanguardDefence\AntiDebugging</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\AntiMacros.h">
+      <Filter>AvanguardDefence\AntiMacros</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\Encryption.h">
+      <Filter>AvanguardDefence\Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\HandlesKeeper.h">
+      <Filter>AvanguardDefence\HandlesKeeper</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\HeapManager.h">
+      <Filter>AvanguardDefence\HandlesKeeper</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\KernelUtils.h">
+      <Filter>AvanguardDefence\KernelUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\KeSecuredMemory.h">
+      <Filter>AvanguardDefence\KeSecuredMemory</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\ThreadsFilter.h">
+      <Filter>AvanguardDefence\ThreadsFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\ModulesFilter.h">
+      <Filter>AvanguardDefence\ModulesFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\PEUtils.h">
+      <Filter>AvanguardDefence\Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\TLS.h">
+      <Filter>AvanguardDefence\TLS</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\PEAnalyzer.h">
+      <Filter>AvanguardDefence\PEAnalyzer</Filter>
+    </ClInclude>
+    <ClInclude Include="HoShiMin%27s API\StringsAPI.h">
+      <Filter>HoShiMin%27s API</Filter>
+    </ClInclude>
+    <ClInclude Include="HoShiMin%27s API\ColoredConsole.h">
+      <Filter>HoShiMin%27s API</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\PebTeb.h">
+      <Filter>AvanguardDefence\PebTeb</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\ApisetResolver.h">
+      <Filter>AvanguardDefence\ApiSet</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\MemoryFilter.h">
+      <Filter>AvanguardDefence\MemoryFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="t1ha\t1ha.h">
+      <Filter>t1ha</Filter>
+    </ClInclude>
+    <ClInclude Include="HoShiMin%27s API\HookHelper.h">
+      <Filter>HoShiMin%27s API</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\MemoryCallbacks.h">
+      <Filter>AvanguardDefence\MemoryFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\ModulesCallbacks.h">
+      <Filter>AvanguardDefence\ModulesFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\MemoryStorage.h">
+      <Filter>AvanguardDefence\MemoryFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\ModulesStorage.h">
+      <Filter>AvanguardDefence\ModulesFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\ZydisExportConfig.h">
+      <Filter>Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\Zydis.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\CommonTypes.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\Decoder.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\Internal\DecoderData.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\DecoderTypes.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\Defines.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\Generated\EnumInstructionCategory.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\Generated\EnumISAExt.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\Generated\EnumISASet.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\Generated\EnumMnemonic.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\Formatter.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\Internal\LibC.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\MetaInfo.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\Mnemonic.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\Register.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\Internal\SharedData.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\SharedTypes.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\Status.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\String.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis\Zydis\Utils.h">
+      <Filter>Zydis\Zydis</Filter>
+    </ClInclude>
+    <ClInclude Include="HoShiMin%27s API\DisasmHelper.h">
+      <Filter>HoShiMin%27s API</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\CheckHook.h">
+      <Filter>AvanguardDefence\CheckHook</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\Mitigations.h">
+      <Filter>AvanguardDefence\MitigationsPolicy</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\AppInitDlls.h">
+      <Filter>AvanguardDefence\AppInitDlls</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\WinTrusted.h">
+      <Filter>AvanguardDefence\WinTrust</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\ApcDispatcher.h">
+      <Filter>AvanguardDefence\KiUserApcDispatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\MinHook.h">
+      <Filter>MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\hModules.h">
+      <Filter>AvanguardDefence\hModules</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\WinHooks.h">
+      <Filter>AvanguardDefence\WinHooks</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\AvnDefinitions.h">
+      <Filter>AvanguardDefence</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\AvnApi.h">
+      <Filter>AvanguardDefence\AvnApi</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\DACL.h">
+      <Filter>AvanguardDefence\DACL</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\HWID.h">
+      <Filter>AvanguardDefence\HWIDs</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\ContextFilter.h">
+      <Filter>AvanguardDefence\ContextFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\ModulesUtils.h">
+      <Filter>AvanguardDefence\ModulesUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\ProcessAPI.h">
+      <Filter>AvanguardDefence\ProcessAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\HWIDsUtils.h">
+      <Filter>AvanguardDefence\HWIDs</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\JavaBindings.h">
+      <Filter>AvanguardDefence\JavaSupport\JavaBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="JNI\include\win32\jni_md.h">
+      <Filter>AvanguardDefence\JavaSupport\JNI\include\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="JNI\include\jni.h">
+      <Filter>AvanguardDefence\JavaSupport\JNI\include</Filter>
+    </ClInclude>
+    <ClInclude Include="JNI\include\jvmti.h">
+      <Filter>AvanguardDefence\JavaSupport\JNI\include</Filter>
+    </ClInclude>
+    <ClInclude Include="HoShiMin%27s API\CodepageAPI.h">
+      <Filter>HoShiMin%27s API</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\ThreatTypes.h">
+      <Filter>AvanguardDefence\ThreatEliminating</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\ThreatElimination.h">
+      <Filter>AvanguardDefence\ThreatEliminating</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\Locks.h">
+      <Filter>AvanguardDefence\Locks</Filter>
+    </ClInclude>
+    <ClInclude Include="xorstr\xorstr.hpp">
+      <Filter>xorstr</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\Remapping.h">
+      <Filter>AvanguardDefence\Remapping</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\asmjit.h">
+      <Filter>AsmJit\asmjit</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core.h">
+      <Filter>AsmJit\asmjit</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\x86.h">
+      <Filter>AsmJit\asmjit</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\arch.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\assembler.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\build.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\builder.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\callconv.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\codeholder.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\compiler.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\constpool.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\cpuinfo.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\datatypes.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\emitter.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\features.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\func.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\globals.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\inst.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\jitallocator.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\jitruntime.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\jitutils.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\logging.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\memmgr.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\misc_p.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\operand.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\osutils.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\raassignment_p.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\rabuilders_p.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\radefs_p.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\ralocal_p.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\rapass_p.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\rastack_p.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\stringbuilder.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\stringutils.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\support.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\target.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\type.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\zone.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\zonehash.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\zonelist.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\zonestack.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\zonestring.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\zonetree.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\core\zonevector.h">
+      <Filter>AsmJit\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\x86\x86assembler.h">
+      <Filter>AsmJit\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\x86\x86builder.h">
+      <Filter>AsmJit\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\x86\x86callconv_p.h">
+      <Filter>AsmJit\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\x86\x86compiler.h">
+      <Filter>AsmJit\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\x86\x86emitter.h">
+      <Filter>AsmJit\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\x86\x86features.h">
+      <Filter>AsmJit\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\x86\x86globals.h">
+      <Filter>AsmJit\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\x86\x86instdb.h">
+      <Filter>AsmJit\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\x86\x86internal_p.h">
+      <Filter>AsmJit\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\x86\x86logging_p.h">
+      <Filter>AsmJit\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\x86\x86opcode_p.h">
+      <Filter>AsmJit\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\x86\x86operand.h">
+      <Filter>AsmJit\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\x86\x86rapass_p.h">
+      <Filter>AsmJit\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmjit\x86\x86ssetoavx_p.h">
+      <Filter>AsmJit\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmtk\asmparser.h">
+      <Filter>AsmJit\asmtk</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmtk\asmtk.h">
+      <Filter>AsmJit\asmtk</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmtk\asmtokenizer.h">
+      <Filter>AsmJit\asmtk</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmtk\elfdefs.h">
+      <Filter>AsmJit\asmtk</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmtk\globals.h">
+      <Filter>AsmJit\asmtk</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmtk\parserutils.h">
+      <Filter>AsmJit\asmtk</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmJit\asmtk\strtod.h">
+      <Filter>AsmJit\asmtk</Filter>
+    </ClInclude>
+    <ClInclude Include="HoShiMin%27s API\JitHelper.h">
+      <Filter>HoShiMin%27s API</Filter>
+    </ClInclude>
+    <ClInclude Include="AvanguardDefence\SfcWrapper.h">
+      <Filter>AvanguardDefence\Sfc</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Avanguard.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\AntiDebugging.cpp">
+      <Filter>AvanguardDefence\AntiDebugging</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\AntiMacros.cpp">
+      <Filter>AvanguardDefence\AntiMacros</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\Encryption.cpp">
+      <Filter>AvanguardDefence\Encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\HandlesKeeper.cpp">
+      <Filter>AvanguardDefence\HandlesKeeper</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\HeapManager.cpp">
+      <Filter>AvanguardDefence\HandlesKeeper</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\KernelUtils.cpp">
+      <Filter>AvanguardDefence\KernelUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\KeSecuredMemory.cpp">
+      <Filter>AvanguardDefence\KeSecuredMemory</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\ThreadsFilter.cpp">
+      <Filter>AvanguardDefence\ThreadsFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\ModulesFilter.cpp">
+      <Filter>AvanguardDefence\ModulesFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\PEUtils.cpp">
+      <Filter>AvanguardDefence\Encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\ProcessAPI.cpp">
+      <Filter>AvanguardDefence\ProcessAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\TLS.cpp">
+      <Filter>AvanguardDefence\TLS</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\PEAnalyzer.cpp">
+      <Filter>AvanguardDefence\PEAnalyzer</Filter>
+    </ClCompile>
+    <ClCompile Include="HoShiMin%27s API\StringsAPI.cpp">
+      <Filter>HoShiMin%27s API</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\ApisetResolver.cpp">
+      <Filter>AvanguardDefence\ApiSet</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\MemoryFilter.cpp">
+      <Filter>AvanguardDefence\MemoryFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\MemoryCallbacks.cpp">
+      <Filter>AvanguardDefence\MemoryFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\ModulesCallbacks.cpp">
+      <Filter>AvanguardDefence\ModulesFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\MemoryStorage.cpp">
+      <Filter>AvanguardDefence\MemoryFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\ModulesStorage.cpp">
+      <Filter>AvanguardDefence\ModulesFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="HoShiMin%27s API\DisasmHelper.cpp">
+      <Filter>HoShiMin%27s API</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\CheckHook.cpp">
+      <Filter>AvanguardDefence\CheckHook</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\Mitigations.cpp">
+      <Filter>AvanguardDefence\MitigationsPolicy</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\AppInitDlls.cpp">
+      <Filter>AvanguardDefence\AppInitDlls</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\WinTrusted.cpp">
+      <Filter>AvanguardDefence\WinTrust</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\ApcDispatcher.cpp">
+      <Filter>AvanguardDefence\KiUserApcDispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\hModules.cpp">
+      <Filter>AvanguardDefence\hModules</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\WinHooks.cpp">
+      <Filter>AvanguardDefence\WinHooks</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\AvnApi.cpp">
+      <Filter>AvanguardDefence\AvnApi</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\DACL.cpp">
+      <Filter>AvanguardDefence\DACL</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\HWID.cpp">
+      <Filter>AvanguardDefence\HWIDs</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\ContextFilter.cpp">
+      <Filter>AvanguardDefence\ContextFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\ModulesUtils.cpp">
+      <Filter>AvanguardDefence\ModulesUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\HWIDsUtils.cpp">
+      <Filter>AvanguardDefence\HWIDs</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\JavaBindings.cpp">
+      <Filter>AvanguardDefence\JavaSupport\JavaBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="HoShiMin%27s API\CodepageAPI.cpp">
+      <Filter>HoShiMin%27s API</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\ThreatElimination.cpp">
+      <Filter>AvanguardDefence\ThreatEliminating</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\Remapping.cpp">
+      <Filter>AvanguardDefence\Remapping</Filter>
+    </ClCompile>
+    <ClCompile Include="AsmJit\asmtk\asmparser.cpp">
+      <Filter>AsmJit\asmtk</Filter>
+    </ClCompile>
+    <ClCompile Include="AsmJit\asmtk\asmtokenizer.cpp">
+      <Filter>AsmJit\asmtk</Filter>
+    </ClCompile>
+    <ClCompile Include="HoShiMin%27s API\JitHelper.cpp">
+      <Filter>HoShiMin%27s API</Filter>
+    </ClCompile>
+    <ClCompile Include="AvanguardDefence\SfcWrapper.cpp">
+      <Filter>AvanguardDefence\Sfc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="AvanguardDefence\SupportedOS.manifest">
+      <Filter>Файлы ресурсов</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="t1ha\t1ha.x64.lib">
+      <Filter>t1ha</Filter>
+    </Library>
+    <Library Include="Zydis\Zydis.x64.lib">
+      <Filter>Zydis</Filter>
+    </Library>
+    <Library Include="MinHook\libMinHook.x64.lib">
+      <Filter>MinHook</Filter>
+    </Library>
+    <Library Include="MinHook\libMinHook.x86.lib">
+      <Filter>MinHook</Filter>
+    </Library>
+    <Library Include="t1ha\t1ha.x86.lib">
+      <Filter>t1ha</Filter>
+    </Library>
+    <Library Include="Zydis\Zydis.x86.lib">
+      <Filter>Zydis</Filter>
+    </Library>
+    <Library Include="JNI\lib\jvm.lib">
+      <Filter>AvanguardDefence\JavaSupport\JNI\lib</Filter>
+    </Library>
+    <Library Include="AsmJit\lib\x86\asmjit.dbg.x86.lib">
+      <Filter>AsmJit\lib\x86</Filter>
+    </Library>
+    <Library Include="AsmJit\lib\x86\asmjit.rel.x86.lib">
+      <Filter>AsmJit\lib\x86</Filter>
+    </Library>
+    <Library Include="AsmJit\lib\x64\asmjit.dbg.x64.lib">
+      <Filter>AsmJit\lib\x64</Filter>
+    </Library>
+    <Library Include="AsmJit\lib\x64\asmjit.rel.x64.lib">
+      <Filter>AsmJit\lib\x64</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="AvanguardDefence\ApcInterceptionRoutine.asm">
+      <Filter>AvanguardDefence\KiUserApcDispatcher</Filter>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Avanguard.rc">
+      <Filter>Файлы ресурсов</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

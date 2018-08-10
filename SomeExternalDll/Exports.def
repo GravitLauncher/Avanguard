@@ -1,0 +1,4 @@
+LIBRARY SomeExternalDll
+EXPORTS
+	HookEmAll
+	UnHookEmAll
