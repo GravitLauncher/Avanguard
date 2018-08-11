@@ -30,9 +30,7 @@
 
 #ifdef TIMERED_CHECKINGS
     // Период проверки:
-    #define TIMER_INTERVAL getTstTime()
-	int getTstTime();
-	void setTstTime(int);
+	#define DEFALT_TIMER_INTERVAL 3000
     #ifdef MODULES_FILTER
         #define FIND_CHANGED_MODULES /* Искать модифицированные модули */
         #ifdef FIND_CHANGED_MODULES
@@ -48,4 +46,11 @@
 
     // Закрывать свои хэндлы в чужих процессах:
     //#define HANDLES_KEEPER
+#endif
+
+// internal
+#ifdef TIMERED_CHECKINGS
+	int getTstTime();
+	void setTstTime(int);
+	#define TIMER_INTERVAL getTstTime()
 #endif

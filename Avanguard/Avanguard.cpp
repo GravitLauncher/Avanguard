@@ -408,7 +408,7 @@ BOOL SetupDACLs() {
 #endif
 
 #ifdef TIMERED_CHECKINGS
-int timeTstDelay = 3000;
+int timeTstDelay = DEFALT_TIMER_INTERVAL;
 
 int getTstTime() {
 	return timeTstDelay;

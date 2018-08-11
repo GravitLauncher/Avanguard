@@ -86,7 +86,7 @@ void JNICALL setCheckTime(JNIEnv* env, jclass klass, jint timeCheck) {
 }
 
 jint JNICALL getCheckTime(JNIEnv* env, jclass klass) {
-    return (jint)getCheckTime();
+    return (jint)getTstTime();
 }
 #endif
 
