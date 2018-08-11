@@ -1,16 +1,16 @@
-package ru.avanguard;
+package ru.zaxar163;
 
 public class Main {
 
     public static void main(String[] args) {
-        AvnBind.avnRegisterThreatNotifier((int threatType) -> {
-            System.out.println("Threat " + AvnBind.ThreatType.getThreat(threatType).name());
+        GuardBind.avnRegisterThreatNotifier((int threatType) -> {
+            System.out.println("Threat " + GuardBind.ThreatType.getThreat(threatType).name());
             return true;
         });
 
-        AvnBind.avnEliminateThreat(AvnBind.ThreatType.UNKNOWN_APC_DESTINATION.getValue());
+        GuardBind.avnEliminateThreat(GuardBind.ThreatType.UNKNOWN_APC_DESTINATION.getValue());
 
-        AvnBind.avnRegisterThreatNotifier(null);
-        AvnBind.avnEliminateThreat(AvnBind.ThreatType.UNKNOWN_APC_DESTINATION.getValue());
+        GuardBind.avnRegisterThreatNotifier(null);
+        GuardBind.avnEliminateThreat(GuardBind.ThreatType.UNKNOWN_APC_DESTINATION.getValue());
     }
 }
