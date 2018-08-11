@@ -31,7 +31,21 @@ public final class GuardBind {
     }
 
     static {
-        System.load(new File("Avanguard.dll").getAbsolutePath());
+    	try {
+    		init();
+    	} catch (Throwable ign) { }
+    }
+    
+    public static void init() {
+    	init(new File("Avanguard.dll"));
+    }
+    
+    public static void init(File dll) {
+    	init(dll.getAbsolutePath());
+    }
+    
+    public static void init(String path) {
+    	System.load(path);
     }
 
     public static native boolean    avnStartDefence();
