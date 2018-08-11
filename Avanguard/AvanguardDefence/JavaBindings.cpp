@@ -80,6 +80,16 @@ void JNICALL avnRegisterNotifier(JNIEnv* env, jclass klass, jobject callback) {
     _notifier = env->GetMethodID(_klass, "call", "(I)Z");
 }
 
+#ifdef TIMERED_CHECKINGS
+void JNICALL setCheckTime(JNIEnv* env, jclass klass, jint timeCheck) {
+    setTstTime((int)timeCheck);
+}
+
+jint JNICALL getCheckTime(JNIEnv* env, jclass klass) {
+    return (jint)getCheckTime();
+}
+#endif
+
 jint JNICALL JNI_OnLoad(JavaVM* vm, void* reserved) {
     JNIEnv* env;
     jint status;
@@ -93,7 +103,7 @@ jint JNICALL JNI_OnLoad(JavaVM* vm, void* reserved) {
 
     if (status != JNI_OK) return JNI_ERR;
 
-    jclass binding = env->FindClass("ru/avanguard/AvnBind");
+    jclass binding = env->FindClass("ru/zaxar163/GuardBind");
     const JNINativeMethod methods[] = {
         { "avnStartDefence"     , "()Z"     , (void*)avnStartDefence },
         { "avnStopDefence"      , "()V"     , (void*)avnStopDefence },
@@ -105,7 +115,11 @@ jint JNICALL JNI_OnLoad(JavaVM* vm, void* reserved) {
         { "avnGetMacId"         , "()J"     , (void*)avnGetMacId },
         { "avnGetHddId"         , "()J"     , (void*)avnGetHddId },
         { "avnGetHash"          , "([B)J"   , (void*)avnGetHash },
-        { "avnRegisterThreatNotifier", "(Lru/avanguard/AvnBind$ThreatNotifier;)V", (void*)avnRegisterNotifier }
+#ifdef TIMERED_CHECKINGS
+        { "setCheckTime"          , "(I)V"   , (void*)setCheckTime },
+        { "getCheckTime"          , "()I"   , (void*)getCheckTime },
+#endif
+        { "avnRegisterThreatNotifier", "(Lru/zaxar163/GuardBind$ThreatNotifier;)V", (void*)avnRegisterNotifier }
     };
     
     status = env->RegisterNatives(binding, methods, sizeof(methods) / sizeof(methods[0]));

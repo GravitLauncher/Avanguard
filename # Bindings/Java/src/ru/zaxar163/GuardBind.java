@@ -1,6 +1,6 @@
-package ru.avanguard;
+package ru.zaxar163;
 
-public final class AvnBind {
+public final class GuardBind {
     enum ThreatType {
         UNKNOWN_THREAT              (0),
         REMOTE_THREAD               (1),
@@ -42,6 +42,8 @@ public final class AvnBind {
 	public static native long       avnGetMacId();
 	public static native long       avnGetHddId();
     public static native long       avnGetHash(byte[] data);
-
+	public static native void       setCheckTime(int time);
+	public static native int        getCheckTime();
+	
     public static native void avnRegisterThreatNotifier(ThreatNotifier notifier);
 }
