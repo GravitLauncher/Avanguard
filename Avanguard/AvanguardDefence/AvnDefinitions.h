@@ -1,6 +1,6 @@
 #pragma once
 
-#define DEBUG_OUTPUT
+//#define DEBUG_OUTPUT /* Дебаг вывод */
 
 //#define SELF_REMAPPING /* Ремаппинг кодовой секции Avanguard.dll с RX-правами, experimental */
 
@@ -45,10 +45,10 @@
     #endif
 
     // Закрывать свои хэндлы в чужих процессах:
-    //#define HANDLES_KEEPER
+    #define HANDLES_KEEPER
 #endif
 
-// internal
+/* Не менять! Используется программой. */
 #ifdef TIMERED_CHECKINGS
 	int getTstTime();
 	void setTstTime(int);

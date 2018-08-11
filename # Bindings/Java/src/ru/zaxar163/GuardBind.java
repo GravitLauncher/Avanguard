@@ -1,7 +1,9 @@
 package ru.zaxar163;
 
+import java.io.File;
+
 public final class GuardBind {
-    enum ThreatType {
+	public static enum ThreatType {
         UNKNOWN_THREAT              (0),
         REMOTE_THREAD               (1),
         WINDOWS_HOOKS_INJECTION     (2),
@@ -24,12 +26,12 @@ public final class GuardBind {
         }
     }
 
-    public interface ThreatNotifier {
-        boolean call(int threatType);
+    public static interface ThreatNotifier {
+    	public boolean call(int threatType);
     }
 
     static {
-        System.load("Avanguard.dll");
+        System.load(new File("Avanguard.dll").getAbsolutePath());
     }
 
     public static native boolean    avnStartDefence();

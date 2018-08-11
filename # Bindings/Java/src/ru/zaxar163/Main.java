@@ -7,10 +7,10 @@ public class Main {
             System.out.println("Threat " + GuardBind.ThreatType.getThreat(threatType).name());
             return true;
         });
-
-        GuardBind.avnEliminateThreat(GuardBind.ThreatType.UNKNOWN_APC_DESTINATION.getValue());
-
-        GuardBind.avnRegisterThreatNotifier(null);
-        GuardBind.avnEliminateThreat(GuardBind.ThreatType.UNKNOWN_APC_DESTINATION.getValue());
+        GuardBind.setCheckTime(100);
+        GuardBind.avnEliminateThreat(GuardBind.ThreatType.REMOTE_THREAD.getValue());
+        while (true) { }
+        //GuardBind.avnRegisterThreatNotifier(null);
+        //GuardBind.avnEliminateThreat(GuardBind.ThreatType.UNKNOWN_APC_DESTINATION.getValue());
     }
 }
