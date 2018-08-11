@@ -2,7 +2,7 @@
 
 //#define DEBUG_OUTPUT /* Дебаг вывод */
 
-#define SELF_REMAPPING /* Ремаппинг кодовой секции Avanguard.dll с RX-правами, beta */
+//#define SELF_REMAPPING /* Ремаппинг кодовой секции Avanguard.dll с RX-правами, beta */
 
 #define SKIP_VIRTUAL_INPUT /* Анти-кликеры и анти-макросы */
 
