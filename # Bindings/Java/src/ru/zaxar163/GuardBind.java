@@ -30,11 +30,11 @@ public final class GuardBind {
     	public boolean call(int threatType);
     }
 
-    static {
+    /*static {
     	try {
     		init();
     	} catch (Throwable ign) { }
-    }
+    }*/
     
     public static void init() {
     	init(new File("Avanguard.dll"));

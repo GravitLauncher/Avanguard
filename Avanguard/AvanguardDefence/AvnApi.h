@@ -2,6 +2,7 @@
 
 #include <Windows.h>
 #include "ThreatTypes.h"
+#include "AvnDefinitions.h"
 
 typedef BOOL    (WINAPI *_AvnStart)();
 typedef VOID    (WINAPI *_AvnStop)();
@@ -17,6 +18,10 @@ typedef BOOL    (WINAPI *_AvnIsFileProtected)(LPCWSTR FilePath);
 typedef BOOL    (WINAPI *_AvnIsFileSigned)(LPCWSTR FilePath, BOOL CheckRevocation);
 typedef BOOL    (WINAPI *_AvnVerifyEmbeddedSignature)(LPCWSTR FilePath);
 typedef BOOL    (WINAPI *_AvnIsAddressAllowed)(PVOID Address, BOOL IncludeJitMemory);
+#ifdef TIMERED_CHECKINGS
+typedef INT     (WINAPI *_AvnGetCheckTime)();
+typedef VOID    (WINAPI *_AvnSetCheckTime)(INT check_time);
+#endif
 typedef UINT64  (WINAPI *_AvnGetCpuid)();
 typedef UINT64  (WINAPI *_AvnGetSmbiosId)();
 typedef UINT64  (WINAPI *_AvnGetMacId)();
@@ -38,6 +43,10 @@ typedef struct _AVN_API {
     _AvnIsFileSigned            AvnIsFileSigned;
     _AvnVerifyEmbeddedSignature AvnVerifyEmbeddedSignature;
     _AvnIsAddressAllowed        AvnIsAddressAllowed;
+#ifdef TIMERED_CHECKINGS
+	_AvnGetCheckTime            AvnGetCheckTime
+	_AvnSetCheckTime            AvnSetCheckTime
+#endif
     _AvnGetCpuid                AvnGetCpuid;                 // Doesn't need synchronization
     _AvnGetSmbiosId             AvnGetSmbiosId;              // Doesn't need synchronization
     _AvnGetMacId                AvnGetMacId;                 // Doesn't need synchronization

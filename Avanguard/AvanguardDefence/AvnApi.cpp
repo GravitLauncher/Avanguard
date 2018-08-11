@@ -1,7 +1,6 @@
 #include "stdafx.h"
 #include "AvnApi.h"
 
-#include "AvnDefinitions.h"
 #include "WinTrusted.h"
 #include "ModulesCallbacks.h"
 #include "MemoryCallbacks.h"
@@ -116,6 +115,18 @@ UINT64 WINAPI AvnHash(PVOID Data, ULONG Size) {
     return t1ha(Data, Size, 0x1EE7C0DEC0FFEE);
 }
 
+#ifdef TIMERED_CHECKINGS
+
+VOID WINAPI AvnSetCheckTime(INT check_time) {
+	setTstTime((int)check_time);
+}
+
+INT WINAPI AvnGetCheckTime() {
+	return (INT)getTstTime();
+}
+
+#endif
+
 VOID AvnInitializeApi() {
     InitializeCriticalSectionAndSpinCount(&CriticalSection, 0xC0000000);
     AvnApi.AvnStart                     = AvnStart;
@@ -132,6 +143,10 @@ VOID AvnInitializeApi() {
     AvnApi.AvnIsFileSigned              = AvnIsFileSigned;
     AvnApi.AvnVerifyEmbeddedSignature   = AvnVerifyEmbeddedSignature;
     AvnApi.AvnIsAddressAllowed          = AvnIsAddressAllowed;
+#ifdef TIMERED_CHECKINGS
+	AvnApi.AvnGetCheckTime              = AvnGetCheckTime;
+	AvnApi.AvnSetCheckTime              = AvnSetCheckTime;
+#endif
     AvnApi.AvnGetCpuid                  = AvnGetCpuid;
     AvnApi.AvnGetSmbiosId               = AvnGetSmbiosId;
     AvnApi.AvnGetMacId                  = AvnGetMacId;
