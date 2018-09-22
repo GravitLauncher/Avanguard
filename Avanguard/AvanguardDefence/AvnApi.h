@@ -44,8 +44,8 @@ typedef struct _AVN_API {
     _AvnVerifyEmbeddedSignature AvnVerifyEmbeddedSignature;
     _AvnIsAddressAllowed        AvnIsAddressAllowed;
 #ifdef TIMERED_CHECKINGS
-	_AvnGetCheckTime            AvnGetCheckTime
-	_AvnSetCheckTime            AvnSetCheckTime
+	_AvnGetCheckTime            AvnGetCheckTime;
+	_AvnSetCheckTime            AvnSetCheckTime;
 #endif
     _AvnGetCpuid                AvnGetCpuid;                 // Doesn't need synchronization
     _AvnGetSmbiosId             AvnGetSmbiosId;              // Doesn't need synchronization

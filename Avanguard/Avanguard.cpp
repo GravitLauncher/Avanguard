@@ -212,7 +212,7 @@ BOOL CALLBACK OnWindowsHookLoadLibrary(PUNICODE_STRING ModuleFileName) {
     if (!IsFileAllowed) {
         Log(XORSTR(L"[i] Checking the path of ") + Path);
         LowerCaseRef(Path);
-        IsFileAllowed = (Path.find(XORSTR(L"system32")) != std::wstring::npos) || (Path.find(XORSTR(L"syswow64")) != std::wstring::npos);
+        IsFileAllowed = true;
     }
 
     if (!IsFileAllowed) BlockedLibs.emplace(NameHash);

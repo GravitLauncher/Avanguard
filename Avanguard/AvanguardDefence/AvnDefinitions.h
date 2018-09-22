@@ -4,17 +4,16 @@
 
 //#define SELF_REMAPPING /* Ремаппинг кодовой секции Avanguard.dll с RX-правами, beta */
 
-#define SKIP_VIRTUAL_INPUT /* Анти-кликеры и анти-макросы */
+//#define SKIP_VIRTUAL_INPUT /* Анти-кликеры и анти-макросы */
 
-#define STRICT_DACLs        /* Урезать права, с которыми могут открыть наш процесс */
+//#define STRICT_DACLs        /* Урезать права, с которыми могут открыть наш процесс */
 //#define MITIGATIONS       /* Сажает FPS с JIT'ом */
 #define SKIP_APP_INIT_DLLS  /* Предотвращать инжект через AppInitDlls */
 #define THREADS_FILTER      /* Предотвращать инжект через CreateRemoteThread */
-#define MODULES_FILTER      /* Собирать информацию о загружаемых модулях */
+//#define MODULES_FILTER      /* Собирать информацию о загружаемых модулях */
 #define APC_FILTER          /* Предотвращать инжект через APC */
-#define MEMORY_FILTER       /* Собирать информацию о выделенной памяти */
-#define STACKTRACE_CHECK    /* Если есть JIT, использовать ТОЛЬКО с MEMORY_FILTER */
-#define TIMERED_CHECKINGS   /* Проверки по таймеру */
+//#define MEMORY_FILTER       /* Собирать информацию о выделенной памяти */
+//#define STACKTRACE_CHECK    /* Если есть JIT, использовать ТОЛЬКО с MEMORY_FILTER */
 
 #define JAVA_BINDINGS   /* Поддержка привязки к Java через JNI */
 
@@ -27,7 +26,7 @@
     // Отслеживать угон контекста:
     #define CONTEXT_FILTER
 #endif
-
+#define CRITICAL_MODULES { L"jvm.dll", L"java.dll" }
 #ifdef TIMERED_CHECKINGS
     // Период проверки:
 	#define DEFALT_TIMER_INTERVAL 3000
@@ -45,7 +44,7 @@
     #endif
 
     // Закрывать свои хэндлы в чужих процессах:
-    #define HANDLES_KEEPER
+    //#define HANDLES_KEEPER
 #endif
 
 /* Не менять! Используется программой. */
