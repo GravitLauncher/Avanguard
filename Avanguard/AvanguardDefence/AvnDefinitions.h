@@ -6,7 +6,7 @@
 
 //#define SKIP_VIRTUAL_INPUT /* Анти-кликеры и анти-макросы */
 
-//#define STRICT_DACLs        /* Урезать права, с которыми могут открыть наш процесс */
+#define STRICT_DACLs        /* Урезать права, с которыми могут открыть наш процесс */
 //#define MITIGATIONS       /* Сажает FPS с JIT'ом */
 #define SKIP_APP_INIT_DLLS  /* Предотвращать инжект через AppInitDlls */
 #define THREADS_FILTER      /* Предотвращать инжект через CreateRemoteThread */
